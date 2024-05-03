@@ -1,0 +1,14 @@
+{
+    "epoch_size" : 6,
+    "save_every_n_epoch" : 30,
+
+    "input_size" : 784 ,
+    "layer_num" : 5,
+    "hidden_size" : 1000,
+    "output_size" : 10,
+    "batch_size" : 64,
+
+    "learning_rate" : 0.01,
+    "momentum" : 0.9,
+    "weight_decay" : 0.000001
+}
