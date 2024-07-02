@@ -28,7 +28,7 @@ class LayerNorm():
     pass
 
 
-# 
+# 사용되지 않음, 작동 보장되지 않음
 class Conv3x3(Updatable):
     def init(self, num_filters=8, name = ''):
         filter_size=3
@@ -39,7 +39,7 @@ class Conv3x3(Updatable):
         input_size = (123, 123)
         output_size = (123 -2, 123 -2, num_filters)
         
-        super().__init__(f'Conv{str(filter_size)}x{str(filter_size)}, filter*{str(num_filters)}) {name}', 
+        super().__init__(f'Conv{str(filter_size)}x{str(filter_size)}, filter*{str(num_filters)} {name}', 
                          input_size, 
                          output_size,
                          weight = stddev * cp.random.randn(filter_size, filter_size, num_filters), 
